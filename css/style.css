@@ -20,15 +20,15 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #2d58c4;
-  background: url("../images/zebra.png") repeat;
+  background-color: #218bd5;
+  /*background: url("../images/zebra.png") repeat;*/
   color: #fff;
-  font-family: 'Neuton', georgia, serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* line 28, ../scss/style.scss */
 #share {
-  background: #122B60;
+  background: #0a1c3c;
   color: rgba(255, 255, 255, 0.5);
   position: fixed;
   bottom: 0;
@@ -36,6 +36,7 @@ body {
   width: 100%;
   height: 75px;
   text-align: right;
+  /*font-weight: lighter;;*/
 }
 /* line 37, ../scss/style.scss */
 #share .wrap {
@@ -68,11 +69,11 @@ body {
 }
 /* line 64, ../scss/style.scss */
 #so.heck {
-  background: url("/heck.png");
+    /*background: url("/heck.png");*/
 }
 /* line 67, ../scss/style.scss */
 #so.fuck {
-  background: url("../fuck.png");
+  /*background: url("../fuck.png");*/
 }
 
 /* line 73, ../scss/style.scss */
@@ -157,7 +158,7 @@ body {
 
 /* line 87, ../scss/style.scss */
 .bfd {
-  margin-top: 24px;
+  margin-top: 35px;
 }
 /* line 89, ../scss/style.scss */
 .bfd a {
@@ -165,9 +166,9 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   cursor: pointer;
-  font-family: 'ProximaNovaSemibold';
+  font-family: 'Oswald', sans-serif;;
   position: relative;
-  padding: .5em .66em;
+  padding: 1.0em 1.5em;
   margin-bottom: 12px;
   text-align: center;
   display: inline-block;
@@ -177,12 +178,6 @@ body {
   -ms-background-clip: padding-box;
   -khtml-background-clip: padding-box;
   background-clip: padding-box;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
   -moz-transition-property: all;
   -webkit-transition-property: all;
   -o-transition-property: all;
@@ -193,54 +188,29 @@ body {
   transition-duration: 0.2s;
   text-decoration: none;
   white-space: normal;
-  -moz-box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0 0 inset;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0 0 inset;
-  -o-box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0 0 inset;
-  box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0 0 inset;
   color: #fff;
-  border: 1px solid #666;
+  border: 0px solid #666;
   border-color: rgba(20, 20, 20, 0.15);
-  background: #c0d4fd;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c0d4fd), color-stop(100%, #98b9fc));
-  background: -webkit-linear-gradient(top, #c0d4fd, #98b9fc);
-  background: -moz-linear-gradient(top, #c0d4fd, #98b9fc);
-  background: -o-linear-gradient(top, #c0d4fd, #98b9fc);
-  background: -ms-linear-gradient(top, #c0d4fd, #98b9fc);
-  background: linear-gradient(top, #c0d4fd, #98b9fc);
-  font-size: 22px;
+  background: #fff;
+  font-size: 20px;
   color: #2a62c1 !important;
 }
 /* line 18, ../scss/lib/_mixins.scss */
 .bfd a:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d9e5fe), color-stop(100%, #b1cafd));
-  background: -webkit-linear-gradient(top, #d9e5fe, #b1cafd);
-  background: -moz-linear-gradient(top, #d9e5fe, #b1cafd);
-  background: -o-linear-gradient(top, #d9e5fe, #b1cafd);
-  background: -ms-linear-gradient(top, #d9e5fe, #b1cafd);
-  background: linear-gradient(top, #d9e5fe, #b1cafd);
+  color: #1a52b1 !important;
   text-decoration: none;
 }
 /* line 23, ../scss/lib/_mixins.scss */
 .bfd a:active, .bfd a.stayActive {
-  background: #98b9fc;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #98b9fc), color-stop(100%, #80a8fb));
-  background: -webkit-linear-gradient(top, #98b9fc, #80a8fb);
-  background: -moz-linear-gradient(top, #98b9fc, #80a8fb);
-  background: -o-linear-gradient(top, #98b9fc, #80a8fb);
-  background: -ms-linear-gradient(top, #98b9fc, #80a8fb);
-  background: linear-gradient(top, #98b9fc, #80a8fb);
-  -moz-box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 1px 0 inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 1px 0 inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 1px 0 inset;
-  box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 1px 0 inset;
+  background: #c8e9fc;
 }
 
 /* line 96, ../scss/style.scss */
 .text {
   display: block;
-  line-height: 48px;
-  font-size: 42px;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+  line-height: 46px;
+  font-size: 36px;
+  /*text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);*/
 }
 
 /* line 102, ../scss/style.scss */
