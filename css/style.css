@@ -11,6 +11,7 @@ a:hover {
 
 /* line 13, ../scss/style.scss */
 html {
+  background-color: #218bd5;
   height: 100%;
 }
 
@@ -62,9 +63,9 @@ body {
   font-size: 20px;
   text-shadow: 0 0 3px #2D58C4;
   text-indent: -9999px;
-  width: 361px;
+  width: 400px;
   height: 58px;
-  margin: 30px auto 30px;
+  margin: 50px auto 50px;
   background-repeat: no-repeat;
 }
 /* line 64, ../scss/style.scss */
@@ -72,8 +73,9 @@ body {
     /*background: url("/heck.png");*/
 }
 /* line 67, ../scss/style.scss */
-#so.fuck {
-  /*background: url("../fuck.png");*/
+#so.actually {
+  background: url("../actually.png");
+  background-repeat: no-repeat;
 }
 
 /* line 73, ../scss/style.scss */
@@ -209,7 +211,7 @@ body {
 .text {
   display: block;
   line-height: 46px;
-  font-size: 36px;
+  font-size: 26px;
   /*text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);*/
 }
 
