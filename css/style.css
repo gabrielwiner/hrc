@@ -1,305 +1,279 @@
-/* line 5, ../scss/style.scss */
-a:link, a:visited, a:active, a:hover {
-  color: #82ADFE;
-  text-decoration: none;
+a {
+    text-decoration: none;
+    color: #adf;
 }
 
-/* line 10, ../scss/style.scss */
-a:hover {
-  text-decoration: underline;
-}
-
-/* line 13, ../scss/style.scss */
 html {
-  background-color: #218bd5;
-  height: 100%;
+    b height: 100%;
 }
 
-/* line 17, ../scss/style.scss */
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #218bd5;
-  /*background: url("../images/zebra.png") repeat;*/
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #218bd5;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* line 28, ../scss/style.scss */
 #share {
-  background: #0a1c3c;
-  color: rgba(255, 255, 255, 0.5);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 75px;
-  text-align: right;
-  /*font-weight: lighter;;*/
+    background-color: #b23;
+    color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    text-align: right;
+    /*font-weight: lighter;;*/
 }
+
+
 /* line 37, ../scss/style.scss */
+
 #share .wrap {
-  padding: 12px 24px 0;
+    padding: 12px 24px 0;
 }
+
+
 /* line 40, ../scss/style.scss */
+
 #share a {
-  color: #fff!important;
+    color: #fff!important;
 }
+
 
 /* line 46, ../scss/style.scss */
+
 #wtf {
-  width: 100%;
-  text-align: center;
-  vertical-align: middle;
-  padding-bottom: 75px;
+    max-width: 600px;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 75px;
+    margin: 0 auto;
 }
+
+.title {
+    max-width: 100%;
+    height: auto;
+    font-family: 'Corben', cursive;
+    font-size: 2em;
+    display: inline-block;
+}
+
 
 /* line 54, ../scss/style.scss */
+
 #so {
-  font-variant: small-caps;
-  color: #FFDE84;
-  font-size: 20px;
-  text-shadow: 0 0 3px #2D58C4;
-  text-indent: -9999px;
-  width: 400px;
-  height: 58px;
-  margin: 50px auto 50px;
-  background-repeat: no-repeat;
-}
-/* line 64, ../scss/style.scss */
-#so.heck {
-    /*background: url("/heck.png");*/
-}
-/* line 67, ../scss/style.scss */
-#so.actually {
-  background: url("../actually.png");
-  background-repeat: no-repeat;
+    margin: 50px auto 35px auto;
 }
 
-/* line 73, ../scss/style.scss */
 #frames {
-  position: relative;
-  width: 100%;
-}
-/* line 268, ../scss/lib/_mixins.scss */
-#frames .frame {
-  display: block;
-}
-/* line 270, ../scss/lib/_mixins.scss */
-#frames .frame.future, #frames .frame.past {
-  display: none;
-}
-/* line 275, ../scss/lib/_mixins.scss */
-.csstransforms3d #frames {
-  -webkit-perspective: 1200;
-  -moz-perspective: 1200px;
-}
-/* line 278, ../scss/lib/_mixins.scss */
-.csstransforms3d #frames .frame {
-  position: absolute;
-  margin-bottom: 12px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-transform-origin: 50% 0 0 50%;
-  -webkit-transform-origin: 50% 0 0 50%;
-  -o-transform-origin: 50% 0 0 50%;
-  -ms-transform-origin: 50% 0 0 50%;
-  transform-origin: 50% 0 0 50%;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -moz-transform: rotateY(0) translateZ(0);
-  -webkit-transform: rotateY(0) translateZ(0);
-  -o-transform: rotateY(0) translateZ(0);
-  -ms-transform: rotateY(0) translateZ(0);
-  transform: rotateY(0) translateZ(0);
-  opacity: 1;
-  display: block;
-  -webkit-transition: -webkit-transform .3s ease-in-out, opacity .3s ease-in-out;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.5s ease-in-out;
-  -moz-transition: -moz-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.5s ease-in-out;
-  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.5s ease-in-out;
-}
-/* line 295, ../scss/lib/_mixins.scss */
-.csstransforms3d #frames .frame.future {
-  -moz-transform: rotateY(60deg) translateZ(350px) translate(200px);
-  -webkit-transform: rotateY(60deg) translateZ(350px) translate(200px);
-  -o-transform: rotateY(60deg) translateZ(350px) translate(200px);
-  -ms-transform: rotateY(60deg) translateZ(350px) translate(200px);
-  transform: rotateY(60deg) translateZ(350px) translate(200px);
-  opacity: 0;
-}
-/* line 300, ../scss/lib/_mixins.scss */
-.csstransforms3d #frames .frame.past {
-  -moz-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
-  -webkit-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
-  -o-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
-  -ms-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
-  transform: rotateY(-60deg) translateZ(350px) translate(-200px);
-  opacity: 0;
-}
-/* line 305, ../scss/lib/_mixins.scss */
-.csstransforms3d #frames .frame.loading {
-  visibility: hidden;
-}
-/* line 77, ../scss/style.scss */
-#frames .frame {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 700px;
-  margin-left: -350px;
+    width: 100%;
 }
 
-/* line 87, ../scss/style.scss */
+
+/* line 268, ../scss/lib/_mixins.scss */
+
+.frame {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    left: 10%;
+    width: 80%;
+    max-width: 600px;
+}
+
+
+/* line 270, ../scss/lib/_mixins.scss */
+
+#frames .frame.future, #frames .frame.past {
+    display: none;
+}
+
+.csstransforms3d #frames {
+    -webkit-perspective: 1200;
+    -moz-perspective: 1200px;
+}
+
+.csstransforms3d #frames .frame {
+    position: absolute;
+    margin-bottom: 12px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transform-origin: 50% 0 0 50%;
+    -webkit-transform-origin: 50% 0 0 50%;
+    -o-transform-origin: 50% 0 0 50%;
+    -ms-transform-origin: 50% 0 0 50%;
+    transform-origin: 50% 0 0 50%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transform: rotateY(0) translateZ(0);
+    -webkit-transform: rotateY(0) translateZ(0);
+    -o-transform: rotateY(0) translateZ(0);
+    -ms-transform: rotateY(0) translateZ(0);
+    transform: rotateY(0) translateZ(0);
+    opacity: 1;
+    display: block;
+    -webkit-transition: -webkit-transform .3s ease-in-out, opacity .3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.5s ease-in-out;
+    -moz-transition: -moz-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.5s ease-in-out;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.5s ease-in-out;
+}
+
+.csstransforms3d #frames .frame.future {
+    -moz-transform: rotateY(60deg) translateZ(350px) translate(200px);
+    -webkit-transform: rotateY(60deg) translateZ(350px) translate(200px);
+    -o-transform: rotateY(60deg) translateZ(350px) translate(200px);
+    -ms-transform: rotateY(60deg) translateZ(350px) translate(200px);
+    transform: rotateY(60deg) translateZ(350px) translate(200px);
+    opacity: 0;
+}
+
+.csstransforms3d #frames .frame.past {
+    -moz-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
+    -webkit-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
+    -o-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
+    -ms-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
+    transform: rotateY(-60deg) translateZ(350px) translate(-200px);
+    opacity: 0;
+}
+
+.csstransforms3d #frames .frame.loading {
+    visibility: hidden;
+}
+
 .bfd {
-  margin-top: 35px;
+    margin-top: 35px;
 }
+
+
 /* line 89, ../scss/style.scss */
+
 .bfd a {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  cursor: pointer;
-  font-family: 'Oswald', sans-serif;;
-  position: relative;
-  padding: 1.0em 1.5em;
-  margin-bottom: 12px;
-  text-align: center;
-  display: inline-block;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding;
-  -o-background-clip: padding-box;
-  -ms-background-clip: padding-box;
-  -khtml-background-clip: padding-box;
-  background-clip: padding-box;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  text-decoration: none;
-  white-space: normal;
-  color: #fff;
-  border: 0px solid #666;
-  border-color: rgba(20, 20, 20, 0.15);
-  background: #fff;
-  font-size: 20px;
-  color: #2a62c1 !important;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    ;
+    position: relative;
+    padding: 1.0em 1.5em;
+    margin-bottom: 12px;
+    text-align: center;
+    display: inline-block;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    -o-background-clip: padding-box;
+    -ms-background-clip: padding-box;
+    -khtml-background-clip: padding-box;
+    background-clip: padding-box;
+    -moz-transition-property: all;
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    white-space: normal;
+    color: #fff;
+    border: 0px solid #666;
+    border-color: rgba(20, 20, 20, 0.15);
+    background: #fff;
+    font-size: 1.2em;
+    color: #2a62c1 !important;
 }
+
+
 /* line 18, ../scss/lib/_mixins.scss */
+
 .bfd a:hover {
-  color: #1a52b1 !important;
-  text-decoration: none;
+    color: #1a52b1 !important;
+    text-decoration: none;
 }
+
+
 /* line 23, ../scss/lib/_mixins.scss */
-.bfd a:active, .bfd a.stayActive {
-  background: #c8e9fc;
-}
+
+.bfd a:active, .bfd a.stayActive {}
+
 
 /* line 96, ../scss/style.scss */
+
 .text {
-  display: block;
-  line-height: 46px;
-  font-size: 26px;
-  /*text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);*/
+    display: block;
+    line-height: 1.4em;
+    font-size: 1.4em;
+    /*text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);*/
 }
+
 
 /* line 102, ../scss/style.scss */
+
 .footnote {
-  margin: 16px 0 0;
-  display: block;
-  font-size: 14px;
-  font-style: italic;
-  max-width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    max-width: 100%;
+    margin: 16px 0;
+    font-size: 14px;
+    font-style: italic;
 }
+
+.footlink {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 /* line 111, ../scss/style.scss */
+
 #twAndFb {
-  text-align: left;
+    text-align: left;
 }
+
 
 /* line 115, ../scss/style.scss */
+
 #links {
-  display: block;
-  float: right;
-  text-align: right;
+    display: block;
+    float: right;
+    text-align: right;
 }
+
 
 /* line 121, ../scss/style.scss */
+
 .clearfix {
-  zoom: 1;
+    zoom: 1;
 }
+
 
 /* line 124, ../scss/style.scss */
+
 .clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
+
 
 /* line 131, ../scss/style.scss */
+
 #credits {
-  font-size: 12px;
+    font-size: 10px;
+padding-top: 10px;
 }
 
-@media only screen and (max-device-width : 320px) {
-  /* line 140, ../scss/style.scss */
-  body {
-    width: 300px;
-    height: auto;
-    padding: 10px;
-    display: block;
-  }
-
-  /* line 148, ../scss/style.scss */
-  #so {
-    width: 300px;
-    height: 48px;
-    background-size: contain;
-    margin: 10px 0;
-  }
-
-  /* line 156, ../scss/style.scss */
-  #wtf #frames .frame {
-    width: 300px;
-    margin-left: -150px;
-  }
-  /* line 160, ../scss/style.scss */
-  #wtf #frames .text {
-    font-size: 24px;
-    line-height: 1.15em;
-  }
-  /* line 166, ../scss/style.scss */
-  #wtf #frames .bfd {
-    margin-top: 20px;
-  }
-  /* line 170, ../scss/style.scss */
-  #wtf #frames .bfd a {
-    font-size: 20px;
-  }
-  /* line 174, ../scss/style.scss */
-  #wtf #frames .footnote {
-    overflow: hidden;
-    width: 300px;
-  }
-
-  /* line 180, ../scss/style.scss */
-  #share {
-    display: none;
-  }
+.social {
+  position: absolute;
 }
